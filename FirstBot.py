@@ -58,21 +58,18 @@ async def on_message(message):
             "This bot also has a chat bot feature if you type in the botchat channel which uses AI to recognize things like greetings and respond accordingly.")
 
     if message.content.startswith("!wordfight"):
-        # victim = message.content.split("!wordfight ", 0) [0]
-        # attacker = '{0.author.mention}'.format(message)
+
         channel = message.channel
 
         def check(m):
             return m.content == random_letter and m.channel == channel
 
-        # vna = ''+victim+' '+attacker
+
         random_letter = random.choice(abc)
         await message.channel.send('First person to say ' + random_letter + ' wins!')
         msg = await client.wait_for('message', check=check)
         await message.channel.send('{.author} is the winner!'.format(msg))
-        # msg = await client.wait_for('message', )
-        # if msg == random_letter:
-        # await message.channel.send('Winner!')
+
 
     if 'BIG BRAIN' in message.content.upper():
         await message.channel.send("Did someone say big brain?")
