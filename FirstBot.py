@@ -42,7 +42,7 @@ async def on_message(message):
         quote = get_quote()
         await message.channel.send(quote)
 
-    if message.channel.id == 914311577996509265:
+    if message.channel.id == CHATBOTCHANNEL:
         response = chatbot.request(message.content)
         await message.channel.send(response)
 
@@ -50,8 +50,8 @@ async def on_message(message):
 
     if message.content.startswith("!help"):
         await message.channel.send(
-            "Hello! This bot is mainly for automatically responding to messages. It responds to 'What's popping?', "
-            "'Big brain', 'Imposter', words that are emojis, and mentions of names in the server. Here is some commands I can do: "
+            "Hello! This bot is mainly for automatically responding to messages. I respond to 'What's popping?', "
+            "'Big brain', 'Imposter',and some words that are emojis. Here is some commands I can do: "
             "!wordfight - A game that whoever types a random letter first wins. \n"
             "!inspire - Get some inspiration from quotes. \n"
             "!help - Get information about this bot, this command.\n"
@@ -63,10 +63,6 @@ async def on_message(message):
         channel = message.channel
 
         def check(m):
-            #  if message.author != victim or attacker:
-            #   await message.channel.send("Stop")
-            #  return False
-
             return m.content == random_letter and m.channel == channel
 
         # vna = ''+victim+' '+attacker
@@ -80,17 +76,6 @@ async def on_message(message):
 
     if 'BIG BRAIN' in message.content.upper():
         await message.channel.send("Did someone say big brain?")
-    if any([keyword in message.content.upper() for keyword in ('BENJAMIN', 'REDLAZER')]):
-        await message.channel.send("Did someone say something about redlazer? <@688491345131601964>")
-
-    if any([keyword in message.content.upper() for keyword in ('EVAN', 'MAGGSDOG')]):
-        await message.channel.send("Did someone say something about MaggsDog? <@803419086838169620>")
-
-    if any([keyword in message.content.upper() for keyword in ('JONATHAN', 'DIHYDROGENMONOXIDE')]):
-        await message.channel.send("Did someone say something about DihydrogenMonoxide? <@603750653516578848>")
-
-    if any([keyword in message.content.upper() for keyword in ('JOEY', 'WHO WHY ARE YOU')]):
-        await message.channel.send("Did someone say something about who why are you? <@803420542707040306>")
     if any([keyword in message.content.upper() for keyword in ('IMPOSTER', 'SUS')]):
         await message.channel.send("sus sus sus amogus reference?")
     if 'POOP' in message.content.upper():
