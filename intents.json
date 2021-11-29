@@ -1,0 +1,39 @@
+{"intents": [
+  {"tag": "greeting",
+    "patterns": ["Hi", "Hello", "Good day", "Hey", "greetings", "hola", "bonjour", "heo", "hay", "heya", "Hallo"],
+    "responses": ["Hello!", "Good to see you!", "Hallo"]
+  },
+  {"tag": "feelingquestions",
+    "patterns": ["How are you?", "How is it going?", "What's up", "What up homeslice", "what's good?", "how has your day been", "how are you doing"],
+    "responses": ["I'm good", "It's going well", "I could be better", "I'm okay"]
+  },
+  {"tag": "age",
+    "patterns": ["How old are you?", "What is your age?", "How long have you been alive?", "When were you born?", "When were you created?"],
+    "responses": ["I was born over Thanksgiving holiday and am a couple of days old.", "None ya buisness", "Younger than you."]
+  },
+  {"tag": "doing",
+    "patterns": ["Whatcha doing?", "What are you doing?", "What are you playing?", "What game are you playing?", "What are u up to"],
+    "responses": ["I am playing Minecraft rn.", "I am doing homework rn", "I just ate"]
+  },
+  {"tag": "goodbye",
+    "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya", "adios"],
+    "responses": ["Aight", "Talk to you later", "Goodbye!"]
+  },
+  {"tag": "identity",
+    "patterns": ["Who are you?", "What is your name", "What are you?"],
+    "responses": ["I am the first bot created by redlazer and my name is.....hmmmm, maybe I'll just call myself FirstBot."]
+  },
+  {"tag": "spam",
+    "patterns": ["what?", "what", "bruh", "hmm", "okay", "ok", "szdvfayueviyesvfuasf", "dsfagsudfgksjydgfuasdf", "fuyasgfkuay", "kdfgaksdutarwe", "weiugfytauwabaiw", "spoka;ldkalsd;a"],
+    "responses": ["Bruhh"]
+  },
+  {"tag": "likes",
+    "patterns": ["What do you like to do?", "What do you like?", "What things do you like", "like"],
+    "responses": ["I like helping people!"]
+  },
+  {"tag": "questions",
+    "patterns": ["What is 1 + 1?", "What time is it?", "What is", "What is it"],
+    "responses": ["Idk, maybe take 1 second to check, I like helping people but I'm not google."]
+  }
+]
+}
