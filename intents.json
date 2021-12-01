@@ -20,7 +20,7 @@
     "responses": ["Aight", "Talk to you later", "Goodbye!"]
   },
   {"tag": "identity",
-    "patterns": ["Who are you?", "What is your name", "What are you?"],
+    "patterns": ["Who are you?", "What is your name", "What are you?", "Why"],
     "responses": ["I am the first bot created by redlazer and my name is.....hmmmm, maybe I'll just call myself FirstBot."]
   },
   {"tag": "spam",
