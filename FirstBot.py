@@ -50,12 +50,12 @@ async def on_message(message):
 
     if message.content.startswith("!help"):
         await message.channel.send(
-            "Hello! This bot is mainly for automatically responding to messages. I respond to 'What's popping?', "
-            "'Big brain', 'Imposter',and some words that are emojis. Here is some commands I can do: "
+            "Hello! I am bot that responds to commands and messages in chat." 
+            "Here are some commands I can do: "
             "!wordfight - A game that whoever types a random letter first wins. \n"
             "!inspire - Get some inspiration from quotes. \n"
             "!help - Get information about this bot, this command.\n"
-            "This bot also has a chat bot feature if you type in the botchat channel which uses AI to recognize things like greetings and respond accordingly.")
+            "I also have a chat bot feature if you type in the botchat channel which uses AI to recognize things like greetings and respond accordingly.")
 
     if message.content.startswith("!wordfight"):
 
@@ -71,12 +71,6 @@ async def on_message(message):
         await message.channel.send('{.author} is the winner!'.format(msg))
 
 
-    if 'BIG BRAIN' in message.content.upper():
-        await message.channel.send("Did someone say big brain?")
-    if any([keyword in message.content.upper() for keyword in ('IMPOSTER', 'SUS')]):
-        await message.channel.send("sus sus sus amogus reference?")
-    if 'POOP' in message.content.upper():
-        await message.channel.send(":poop:")
     if any([keyword in message.content.upper() for keyword in ('SOPHISTICATED', 'FANCY', 'MYSTERY')]):
         await message.channel.send(":face_with_monocle:")
     if 'SURE' in message.content.upper():
