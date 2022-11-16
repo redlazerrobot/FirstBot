@@ -1,7 +1,7 @@
 {"intents": [
   {"tag": "greeting",
     "patterns": ["Hi", "Hello", "Good day", "Hey", "greetings", "hola", "bonjour", "heo", "hay", "heya", "Hallo"],
-    "responses": ["Hello!", "Good to see you!", "Hallo"]
+    "responses": ["Hello!", "Good to see you!", "Hi!"]
   },
   {"tag": "feelingquestions",
     "patterns": ["How are you?", "How is it going?", "What's up", "What up homeslice", "what's good?", "how has your day been", "how are you doing"],
@@ -17,7 +17,7 @@
   },
   {"tag": "goodbye",
     "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya", "adios"],
-    "responses": ["Aight", "Talk to you later", "Goodbye!"]
+    "responses": ["Talk to you later", "Goodbye!"]
   },
   {"tag": "identity",
     "patterns": ["Who are you?", "What is your name", "What are you?", "Why"],
@@ -25,7 +25,7 @@
   },
   {"tag": "spam",
     "patterns": ["what?", "what", "bruh", "hmm", "okay", "ok", "szdvfayueviyesvfuasf", "dsfagsudfgksjydgfuasdf", "fuyasgfkuay", "kdfgaksdutarwe", "weiugfytauwabaiw", "spoka;ldkalsd;a"],
-    "responses": ["Bruhh"]
+    "responses": ["?"]
   },
   {"tag": "likes",
     "patterns": ["What do you like to do?", "What do you like?", "What things do you like", "like"],
